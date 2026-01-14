@@ -17,6 +17,7 @@ void NekoKillHUD_OnClientConnected(int client)
 void NekoKillHUD_OnMapStart()
 {
 	HudRunning = false;
+	ResetHudSolt();
 	StyleChatDelay = NCvar_NekoKillHud[CKillHud_StyleChatDelay].IntValue;
 	StartCatchTime();
 }
@@ -32,6 +33,7 @@ void NekoKillHUD_OnConfigsExecuted()
 void NekoKillHUD_OnMapEnd()
 {
 	HudRunning = false;
+	ResetHudSolt();
 }
 
 Action Event_PlayerHurt(Event event, const char[] name, bool dontBroadcast)
@@ -135,4 +137,5 @@ Action Event_MapTransition(Event event, const char[] name, bool dontBroadcast)
 {
 	IsMapTransition = true;
 	return Plugin_Continue;
+
 }
