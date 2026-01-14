@@ -17,7 +17,7 @@
 #include <neko/nekotools>
 #include <neko/nekonative>
 
-#define PLUGIN_VERSION "7.11NS_r1.0"
+#define PLUGIN_VERSION "7.13NS_r1.3"
 
 // Neko Special Modules.
 #include "nspecials/native.sp"
